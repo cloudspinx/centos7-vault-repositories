@@ -27,6 +27,13 @@ Step 1: Clone the repository
 git clone https://github.com/cloudspinx/centos7-vault-repositories.git
 ```
 
+If you don't have `git`, you can download the scripts using `curl`:
+
+```bash
+curl -fsSL -O https://raw.githubusercontent.com/cloudspinx/centos7-vault-repositories/main/generate_base_repos.sh
+curl -fsSL -O https://raw.githubusercontent.com/cloudspinx/centos7-vault-repositories/main/enable_repos.sh
+```
+
 Step 2: Navigate into the `centos7-vault-repositories` directory:
 
 ```bash
