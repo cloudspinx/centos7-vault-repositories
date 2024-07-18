@@ -1,0 +1,6 @@
+[extras]
+name=CentOS-$releasever - extras
+baseurl=https://vault.centos.org/centos/$releasever/extras/$basearch/
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+enabled=0

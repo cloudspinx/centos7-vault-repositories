@@ -1,0 +1,6 @@
+[updates]
+name=CentOS-$releasever - updates
+baseurl=https://vault.centos.org/centos/$releasever/updates/$basearch/
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+enabled=0

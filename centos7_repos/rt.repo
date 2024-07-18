@@ -1,0 +1,6 @@
+[rt]
+name=CentOS-$releasever - rt
+baseurl=https://vault.centos.org/centos/$releasever/rt/$basearch/
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+enabled=0
