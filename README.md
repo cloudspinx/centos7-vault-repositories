@@ -1,6 +1,6 @@
 # CentOS 7 Vault Repositories (End-of-Life - Limited Use)
 
-This repository contains `.repo` files for the CentOS 7 Vault repositories.
+This repository contains [vault](https://vault.centos.org/centos/7/) `.repo` files for the CentOS 7 and scripts used to generate those repos.
 
 Important Note:
 
