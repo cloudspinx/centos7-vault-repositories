@@ -21,10 +21,11 @@ We have created two scripts that are used to generate and enable or disable repo
 1. `generate_base_repos.sh`: Use this to generate repositories in `.repo`.
 2. `enable_repos.sh`: Use this to enable or disable repositories
 
-Step 1: Clone the repository
+**Step 1**: Clone the repository
 
 ```bash
 git clone https://github.com/cloudspinx/centos7-vault-repositories.git
+cd centos7-vault-repositories
 ```
 
 If you don't have `git`, you can download the scripts using `curl`:
@@ -34,13 +35,7 @@ curl -fsSL -O https://raw.githubusercontent.com/cloudspinx/centos7-vault-reposit
 curl -fsSL -O https://raw.githubusercontent.com/cloudspinx/centos7-vault-repositories/main/enable_repos.sh
 ```
 
-Step 2: Navigate into the `centos7-vault-repositories` directory:
-
-```bash
-cd centos7-vault-repositories
-```
-
-Step 3: Run script to generate key vault repositories:
+**Step 2**: Run script to generate key vault repositories:
 
 ```bash
 bash generate_base_repos.sh
@@ -59,7 +54,7 @@ Created centos7_repos/updates.repo
 Generated .repo files for all repositories in centos7_repos.
 ```
 
-Step 4: Run script to enable or disable vault repos. Choose ones to enable and ones to disable accordingly.
+**Step 3**: Run script to enable or disable vault repos. Choose ones to enable and ones to disable accordingly.
 
 ```bash
 bash enable_repos.sh
@@ -86,14 +81,14 @@ Enabled repository 'updates'.
 Repository enablement process completed.
 ```
 
-Step 5: Backup current repositories
+**Step 4**: Backup current repositories
 
 ```bash
 mkdir ~/repos_backup
 sudo mv /etc/yum.repos.d/* ~/repos_backup
 ```
 
-Step 6: Copy generated repository files to ` /etc/yum.repos.d/`
+**Step 5**: Copy generated repository files to ` /etc/yum.repos.d/`
 
 ```bash
 sudo cp -r centos7_repos/* /etc/yum.repos.d/
@@ -133,5 +128,3 @@ repolist: 17,851
 ```
 
 This confirms the vault repositories configured on CentOS 7 system are working.
-
-
